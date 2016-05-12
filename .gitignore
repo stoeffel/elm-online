@@ -1,0 +1,12 @@
+# elm-package generated files
+elm-stuff/
+# elm-repl generated files
+repl-temp-*
+node_modules
+index.js
+npm-debug.log
+coverage
+.nyc_output
+coverage.lcov
+examples/build
+!examples/build/index.html

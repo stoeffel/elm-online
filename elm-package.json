@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "summary": "Subscribe to online/offline changes",
+    "repository": "https://github.com/stoeffel/elm-online.git",
+    "license": "BSD3",
+    "source-directories": [
+        "src",
+        "examples"
+    ],
+    "exposed-modules": [
+        "Online"
+    ],
+    "dependencies": {
+        "elm-lang/core": "4.0.0 <= v < 5.0.0"
+    },
+    "native-modules": true,
+    "elm-version": "0.17.0 <= v < 0.18.0"
+}
