@@ -79,7 +79,7 @@ onEffects router subs state =
 
 
 onSelfMsg : Platform.Router msg IsOnline -> IsOnline -> State msg -> Task Never (State msg)
-onSelfMsg router location state =
+onSelfMsg router isOnline state =
     case state of
         Nothing ->
             Task.succeed Nothing
@@ -87,7 +87,7 @@ onSelfMsg router location state =
         Just { subs } ->
             let
                 send (Tagger tagger) =
-                    Platform.sendToApp router (tagger location)
+                    Platform.sendToApp router (tagger isOnline)
             in
                 Task.sequence (List.map send subs)
                     `Task.andThen` \_ ->
