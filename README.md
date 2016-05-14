@@ -1,6 +1,9 @@
 elm-online
 ==========
 
+> Subscribe to online/offline changes in your apps.  
+> `elm-online` wraps "online" and "offline" events from the browser ([see mdn/Online_and_offline_events](https://developer.mozilla.org/en/docs/Online_and_offline_events)).
+
 ## Example
 
 Run the example in elm-reactor like this:
